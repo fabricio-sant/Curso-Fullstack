@@ -15,6 +15,7 @@ header {
     color: #fff;
     /*flex box*/
     display: flex;
+    border-bottom: 5px solid #191970;
 }
 
 .contentHeader {
