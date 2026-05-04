@@ -3,11 +3,13 @@ body  {
 }
 
 header {
+    height: 100px;
     background: #222;
     /*COR DE TEXTO*/
     color: #fff;
     /*FlexBox*/
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
