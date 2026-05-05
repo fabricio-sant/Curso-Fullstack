@@ -8,6 +8,13 @@ body  {
     background: #f5f5f5;
 }
 
+.contentMain {
+    margin: 0 auto;
+    /*largura*/
+    max-width: 1000px;
+    width: 100%;
+}
+
 header {
     height: 100px;
     background: #222;
@@ -49,3 +56,23 @@ header nav ul a:hover {
     color: orange;
 }
 
+/*carousel*/
+.carousel article {
+    margin-top: 20px;
+}
+
+.carousel img {
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+}
