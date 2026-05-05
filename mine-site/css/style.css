@@ -62,7 +62,7 @@ header nav ul a:hover {
 }
 
 .carousel img {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .cards {
@@ -72,7 +72,10 @@ header nav ul a:hover {
     padding: 20px;
 }
 
-.card {
+.card1 .card2 .card3 {
     background: white;
     padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
