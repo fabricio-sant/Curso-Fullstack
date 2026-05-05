@@ -34,6 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -63,6 +64,7 @@ header nav ul a:hover {
 
 .carousel img {
     border-radius: 5px;
+    width: 100%;
 }
 
 .cards {
