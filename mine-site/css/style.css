@@ -1,108 +1,123 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    list-style: none;
 }
-
-body  {
+body{
     background: #f5f5f5;
 }
 
-.contentMain {
-    margin: 0 auto;
-    /*largura*/
-    max-width: 1000px;
+.containerMain{
+     margin: 0 auto;
+     max-width: 1000px;
     width: 100%;
+    
 }
+
 
 header {
-    height: 100px;
-    background: #222;
-    /*COR DE TEXTO*/
-    color: #fff;
-    /*flex box*/
     display: flex;
-    border-bottom: 5px solid #191970;
+    background: #000;
+    color: #f5f5f5;
+    
+   height: 100px; /* maximo de tamanho*/
+
 }
 
-.contentHeader {
+.contentHeader{
+    display: flex;
     margin: 0 auto;
-    /*largura*/
+    align-items: center;
     max-width: 1000px;
     width: 100%;
-    /*flex box*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+  
+    justify-content: space-between;
 }
 
-header h1 {
+header  h1{
     margin: 20px;
 }
 
-header nav ul {
+header  nav ul{
     display: flex;
+    list-style: none;
+   
+    
+    
 }
 
-header nav ul a {
-    color: #fff;
+header  nav ul a{
     text-decoration: none;
     font-size: 20px;
+    color: #f5f5f5;
     padding: 20px;
-} 
+}
 
-header nav ul a:hover {
-    text-decoration: underline;
+header  ul a:hover{
+    text-decoration: underline blue;
     color: orange;
 }
 
-/*carousel*/
-.carousel article {
+.carrosel article{
     margin-top: 20px;
+    
 }
 
-.carousel img {
+.carrosel img{
     border-radius: 5px;
     width: 100%;
 }
 
-.cards {
+
+
+.cards{
     display: flex;
+    padding: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    
 }
-
-.card1 .card2 .card3 {
-    background: white;
+ .card {
     padding: 20px;
-    margin-bottom: 20px;
+    background-color: white;
     border-radius: 10px;
-    border: 1px solid gray;
+    margin-top: 20px;
+    border: 1px solid grey;
 }
 
-.extra {
-    background: white;
+.extra{
+    background: #ddd;
     padding: 30px;
-    text-align: center;
 }
-
-/*Footer*/
-
-footer {
+footer{
     background: #222;
     color: white;
     padding: 15px;
     margin-top: 20px;
 }
 
-.paginaSobre h1 {
+.paginaSobre h1{
     color: #191970;
     padding-top: 10px;
+    margin-bottom: 20px;
 }
 
-.accordion {
+
+
+/*Página Sobre*/
+
+.paginaSobre{
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    flex-wrap: wrap;
+  
+    justify-content: space-between;
+}
+
+
+.accordion{
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -113,6 +128,7 @@ footer {
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  font-weight: bold;
 }
 
 .active, .accordion:hover {
@@ -124,4 +140,67 @@ footer {
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+.panel p{
+    padding: 20px;
+    line-height: 21px;
+}
+
+
+/* Formulário */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form .titulo-checkbox {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(39, 39, 234);
+  color: white;
+  cursor: pointer;
+}
+
+.inCadrastro{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+    font-size: 20px;
+    color: #000;
+}
+
+.inCadrastro:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 25px;
+    color: blue;
+
 }

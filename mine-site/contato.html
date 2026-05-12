@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MC Máquinas</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <section class="contentHeader">
+        <h2>Menu</h2>
+        <nav>
+          <ul>
+            <li><a href="/sobre.html">Início</a></li>
+            <li><a href="/sobre.html">Sobre</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="contentMain paginaSobre">
+      <section>
+        <h1>Página Contato</h1>
+        <form id="meuFormulario">
+          <article class="form-group">
+            <label for="nome">Nome: </label>
+
+            <input type="text" for="nome" id="nome" />
+          </article>
+          <article class="form-group">
+            <label for="email">Email: </label>
+            <input type="text" for="email" id="email" />
+          </article>
+
+          <article class="form-group">
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" />
+          </article>
+
+          <article class="form-group">
+            <label for="sexo">Sexo:</label>
+            
+
+            <select name="sexo" id="sexo">
+              <option value="m">Masculino</option>
+              <option value="F">Feminino</option>
+            </select>
+          </article>
+
+          <article class="form-group">
+            <h1>Deseja receber informações</h1>
+            <label for="s">Sim? </label>
+            <input type="checkbox" id="s" />
+          </article>
+
+          <article class="form-group">
+            <button type="submit">Enviar</button>
+          </article>
+
+          <article class="form-group">
+            <a class="inCadrastro" href="/cadrastro.html">Click aqui para cadrastra-se</a>
+          </article>
+        </form>
+      </section>
+
+      <footer>
+        <p>@ 2026 Mc Máquinas</p>
+      </footer>
+    </main>
+  </div>
+  <script src="/js/validacao.js"></script>
+</body>
+
+</html>
