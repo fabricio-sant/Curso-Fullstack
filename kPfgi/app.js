@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const port = 3001;
 
+//MIDDLEWARES com os dados
+app.use(express.static('public'));
+
 //Variavel com os dados
 const alimentos = [
     {id: 1, nome: "Feijão", preco: 10},
@@ -32,6 +35,13 @@ app.get('/TiposPratos', (req, res) => {
 app.get('/Produtos', (req, res) => {
     res.send(alimentos);
 });
+
+//Rota home
+app.get('/home', (req, res) => {
+    //console.log("Olá",__dirname);
+    res.sendFile(__dirname + '/public/index.html');
+});
+
 
 //Tipos de Pratos
 app.get('/TiposPratos', (req, res) => {
